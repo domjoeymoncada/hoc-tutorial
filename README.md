@@ -1,27 +1,28 @@
-# React + TypeScript + Vite
+## hoc-tutorial: Higher-Order Component (HOC) Modal Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+hoc-tutorial is a minimalist React application designed to showcase the power and versatility of Higher-Order Components (HOCs). The app demonstrates how HOCs can efficiently add modal functionality to different pages without sharing state between them.
 
-Currently, two official plugins are available:
+### Purpose
+The purpose of hoc-tutorial is to provide a practical example of implementing Higher-Order Components in a React application. It aims to demonstrate how HOCs can help avoid code repetition and enable the use of a shared modal component across different pages.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Features
+🔹 Two Pages with Modal: The app features two pages, each equipped with a button that opens the same modal. Both pages are wrapped in the same HOC to enable the modal functionality.  
+🔹 Reusable HOC: The Higher-Order Component (HOC) used in hoc-tutorial can be applied to any component, providing them with modal capabilities. This ensures easy reusability throughout the application.
 
-## Expanding the ESLint configuration
+### How to Use
+To run the application locally, follow these steps:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone the repository:   
+  ```git clone https://github.com/domjoeymoncada/hoc-tutorial```
+2. Navigate to the project directory and install the dependencies:   
+  ```cd hoc-tutorial && npm install```
+3. Start the development server:    
+  ```npm run dev```
+4. View it in browser:  
+  ```localhost:5173```
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Tech Stack
+- React
+- Vte
+- Higher-Order Components (HOCs)
+- Ant Design
